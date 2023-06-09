@@ -1,6 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IBM+Plex+Serif:wght@300&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IBM+Plex+Serif:wght@300&family=Playfair+Display:ital@0;1&display=swap');
 
 :root{
     --themeColor: coral;
@@ -16,9 +16,19 @@ body{
 }
 #home{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("./Images/houseBackground.jpg");
+    height: 100vh;
 }
 p{
     font-family: var(--themeFont);
+    font-size: 25px;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-weight: 50;
+    font-style: italic;
 }
 
 nav{
@@ -53,10 +63,10 @@ a{
     color: coral;
     
 }
-.link{
+.navlink{
     position: relative;
   }
-.link:after{
+.navlink:after{
   content: '';
   position: absolute;
   width: 0; height: 3px;
@@ -68,12 +78,35 @@ a{
   -webkit-transition: width .4s ease;
 }
  
-.link:hover:after{
+.navlink:hover:after{
   width: 100%;
   left: 0;
   background: white;
 }
 
 #landingPage{
-    height: 100vh;
+    max-width: 75%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    margin-top: 2rem;
+    padding: 2rem 0;
+    
+}
+#Newsletter{
+    margin: auto;
+}
+input{
+    padding: 15px;
+    font-size: 19px;
+    border-width: 3px;
+    border-color: var(--themeColor);
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 0px 5px 30px rgba(66,66,66,.75);
+    text-shadow: -10px -15px 5px rgba(66,66,66,.75);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
