@@ -1,0 +1,79 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IBM+Plex+Serif:wght@300&display=swap');
+
+
+:root{
+    --themeColor: coral;
+    --themeFont: font-family: 'Cormorant Garamond', serif;
+    --themeFont2: font-family: 'IBM Plex Serif', serif;;
+
+}
+body{
+    margin: 0;
+}
+#LMlogo{
+    width:15rem ;
+}
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("./Images/houseBackground.jpg");
+}
+p{
+    font-family: var(--themeFont);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 1rem;
+}
+
+ul{
+    display: flex;
+}
+
+#navItems ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 8px;
+    
+}
+
+a:hover{
+    color: white;
+    box-shadow: inset;
+    box-shadow: rgba(230, 224, 224, 0.24) 0px 3px 8px;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: coral;
+    
+}
+.link{
+    position: relative;
+  }
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: var(--themeColor);
+  transition: width .4s ease;
+  -webkit-transition: width .4s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: white;
+}
+
+#landingPage{
+    height: 100vh;
+}
