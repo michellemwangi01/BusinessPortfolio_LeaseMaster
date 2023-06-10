@@ -4,7 +4,7 @@
 
 :root{
     --themeColor: coral;
-    --themeColor2: rgb(243, 205, 191);
+    --themeColor2: rgb(243, 210, 198);
     --themeFont: font-family: 'Cormorant Garamond', serif;
     --themeFont2: font-family: 'IBM Plex Serif', serif;;
 
@@ -34,12 +34,19 @@ h2{
     font-style: italic;
     color: coral;
 }
+em{
+    color: var(--themeColor);
+    font-style: normal;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     margin: 0 2rem;
     padding: 1rem;
+}
+#homeNav{
+    color: var(--themeColor);
 }
 
 ul{
@@ -122,15 +129,19 @@ input::placeholder{
 }
 button{
     padding: 10px;
-    background-color: var(--themeColor);
+    
     font-family: var(--themeFont);
     font-size: 20px;
     border-radius: 15px;
-    position: absolute;
-    right: 120px;
     border: white solid 1px;
     bottom: 10px;
     top: 8px;
+}
+
+#Subscribe{
+    background-color: var(--themeColor);
+    position: absolute;
+    right: 120px;
 }
 
 
@@ -226,15 +237,16 @@ font-size: small;
     width: 20%;
 }
 
-#demo div{
-    height: 15rem;
+#demo{
     margin: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
 }
-#demo div h2{
+#demo h2{
     text-align: center;
     font-size: 5rem;
 }
-#demo div h4{
+#demo h4{
     text-align: center;
     font-size: 2rem;
     color: var(--themeColor2);
@@ -245,4 +257,67 @@ i{
     color: red;
     font-size:100px;
    
+}
+#callToAction{
+    text-align: center;
+   
+}
+#callToAction button{
+    margin: 0 5em;
+    color: white;
+    padding: 0.75em;
+    font-size: 25px;
+}
+
+#demoBtn{
+    background-color: rgb(80, 211, 80);
+}
+#demoBtn:hover{
+    background-color: white;
+    color: rgb(80, 211, 80);
+    border: 1px solid rgb(80, 211, 80);
+}
+
+#startNow{
+    background-color: rgb(102, 102, 215);
+}
+#startNow:hover{
+    background-color: white;
+    color: rgb(102, 102, 215);
+    border: 1px solid rgb(102, 102, 215);
+}
+.teamMember{
+    object-fit: cover;
+    overflow: hidden;
+    width: 310px;
+    height: 350px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.teamMember:hover{
+    opacity: 0.5;
+}
+.teamdiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    
+
+}
+
+.theTeam{
+    background-color: var(--themeColor2);
+    padding-bottom: 3rem;
+}
+.theTeam h1{
+    color: black;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-style: italic;
+    font-size: 3rem;
 }
