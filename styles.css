@@ -409,6 +409,7 @@ fieldset{
 }
 .footer{
     background-color: var(--themeColor);
+    padding-bottom: 1.5rem;
 }
 .footerContent{
     padding: 2rem;
