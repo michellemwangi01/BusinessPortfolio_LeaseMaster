@@ -68,7 +68,9 @@ a:hover{
     font-family: 'Playfair Display', serif;
     
 }
-
+#subhead{
+    font-size: 2rem;
+}
 
 a{
     text-decoration: none;
