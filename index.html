@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/21e4dcac4e.js" crossorigin="anonymous"></script>
     <title>LeaseMaster Ltd.</title>
 </head>
 <body>
@@ -119,7 +121,13 @@
         <h1>Meet the Team</h1>
         
         <div class="teamdiv">
-            <div><img class="teamMember" src="./Images/pexels-antoni-shkraba-7163455.jpg" alt=""></div>
+            <div class="container">
+                <img class="teamMember" src="./Images/pexels-antoni-shkraba-7163455.jpg" alt="">
+                <div class="text-overlay">
+                    <p class="memberSocials">Text on Top of Image</p>
+                  </div>
+                
+            </div>
             <div><img class="teamMember" src="./Images/pexels-christina-morillo-1181519.jpg" alt=""></div>
             <div><img class="teamMember" src="./Images/pexels-christina-morillo-1181521.jpg" alt=""></div>
             <div><img class="teamMember" src="./Images/pexels-diva-plavalaguna-6150379.jpg" alt=""></div>
@@ -127,8 +135,66 @@
         </div>
 
     </div>
+
+    <!-- ******************************** -->
+    <h1 id="contactDetails">Contact Details</h1>
+    <div id="formandLinks">      
+        <div id="clientForm">
+            <form action="">
+                <fieldset id="IdentityKinInfo" class="row g-3 scheduler-border">
+                    <legend class="scheduler-border"> Client Details</legend>
+            
+                    <div class="">
+                        <span class="clientdeets" id="">Full Names</span>
+                        <input value = '' type="text" name="kinFullNames"class="myformControl" aria-label="Sizing example input" aria-describedby="">
+                        <span><p class='errorMessages'></p></span>
+                    </div>
+                    <div class="">
+                        <span class="clientdeets" id="">Email</span>
+                        <input value = '' type="email" name="kinRelationship"class="myformControl" aria-label="Sizing example input" aria-describedby="">
+                        <span><p class='errorMessages'></p></span>
+                    </div>
+                    
+                    <div class="">
+                        <span class="clientdeets" id="">Mobile Number</span>
+                        <input value = '' type="text" name="kinMobile" class="myformControl" aria-label="Sizing example input" aria-describedby="">
+                        <span><p class='errorMessages'></p></span>
+                    </div>
+                
+                    <button id="submit" type="submit">Submit</button>
+            </fieldset>
+            
+            </form>
+        </div>
+        <div id="contactIcons">
+            <a href=""><i class="fa-solid fa-envelope fa-beat fa-2xl" style="color: coral;"></i> &nbsp; Email</a>
+            <a href=""><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: coral;"></i>&nbsp; Instagram</a>
+            <a href=""><i class="fa-solid fa-phone fa-beat fa-2xl" style="color: coral;"></i>&nbsp; Phone</a>
+        </div>
+    </div>
+
+    <!-- ******************************** -->
+    <div class="footer">
+        <div class="footerContent">
+            <div>
+                <p>Lorem.</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div>
+                <p>Tel: +(254)724256162 </p>
+                <p>Email: info@leasemaster.ke</p>
+            </div>
+            <div>
+                <p>Nairobi, Kenya</p>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div> 
+            <p id="copyright">&#169;LEASEMASTER</p>
+        </div>
+
+    </div>
     
-  <script src="./index.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
 
@@ -138,11 +204,4 @@
 
 
 
-  <!-- <div id="contactIcons">
-                <a href=""><i class="fa fa-whatsapp" style="font-size:48px;color:rgb(23, 23, 23)"></i></a>
-                <a href=""><i class="fa fa-envelope" style="font-size:48px;color:rgb(23, 23, 23)"></i></a>
-                <a href=""><i class="fa fa-mobile-phone" style="font-size:52px;color:rgb(23, 23, 23)"></i></a>
-                <a href=""><i class="fa fa-linkedin-square"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin fa-beat" style="font-size:52px;color:rgb(23, 23, 23)"></i></a>
-                  
-            </div> -->
+ 
