@@ -431,3 +431,7 @@ fieldset{
     text-align: center;
     color: white;
   }
+  .footerDeets{
+    margin: 20px;
+    padding: 20px;
+  }
