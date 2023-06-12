@@ -435,3 +435,17 @@ fieldset{
     margin: 20px;
     padding: 20px;
   }
+  
+  #footerLogo {
+   
+    animation: rotation 5s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotateY(360deg);
+    }
+    to {
+      transform: rotateX(0deg);
+    }
+  }

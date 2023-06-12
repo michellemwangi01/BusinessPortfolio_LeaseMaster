@@ -9,7 +9,7 @@ console.log(teamMembers);
 //   textInImage.textContent = "hovered";
 // }  
 
-teamMembers.addEventListener("mouseover", (e)=>{
+teamMembers.addEventListener("mouseover", ()=>{
   let textInImage = teamMembers.innerHTML;
   textInImage.innerHTML = "hovered";
 })
