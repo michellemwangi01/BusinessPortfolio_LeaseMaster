@@ -1,7 +1,9 @@
-const teamMembers = document.querySelector('#memberSocials');
+const teamMembers = document.getElementById('memberSocials');
+const teamMembersTitle = document.getElementById('meetTheTeam');
+
 const memberSocials =  document.getElementsByClassName("memberSocials");
 
-console.log(teamMembers);
+console.log(teamMembersTitle.textContent);
 
 
 // for (element in teamMembers){
@@ -10,8 +12,7 @@ console.log(teamMembers);
 // }  
 
 teamMembers.addEventListener("mouseover", ()=>{
-  let textInImage = teamMembers.innerHTML;
-  textInImage.innerHTML = "hovered";
+  teamMembers.textContent = "Meet the Team";
 })
 
   

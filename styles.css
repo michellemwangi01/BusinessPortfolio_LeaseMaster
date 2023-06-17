@@ -20,6 +20,10 @@ body{
     height: 100vh;
 
 }
+#companyName{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
 p{
     font-family: var(--themeFont);
     font-size: 25px;
@@ -225,7 +229,13 @@ font-size: small;
     transform: scale(40);
 }
 
+.text-overlay{
+    display: none;
+}
 
+.text-overlay:hover{
+    display: block;
+}
 
 
 .card p{
@@ -391,9 +401,7 @@ fieldset{
     color: var(--themeColor);
     
 }
-#contactIcons a:hover{
-   
-}
+
 .clientdeets{
     font-size: 20px;
 }
